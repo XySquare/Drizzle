@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              style="?android:attr/listSeparatorTextViewStyle"
+              android:layout_margin="15dp"
+              android:paddingStart="0dp"
+              android:paddingBottom="8dp"
+              android:paddingLeft="0dp">
+
+    <LinearLayout
+        android:id="@+id/list_item_shot_details_title_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <cn.gavinliu.android.lib.shapedimageview.ShapedImageView
+            android:id="@+id/list_item_shot_details_designer"
+            app:shape_mode="circle"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="SXSW's Flatstock 59 in Austin? title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_item_shot_details_title"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:text="by DKNG on Mar 9, 2017"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_item_shot_details_date"
+                android:textSize="14sp"
+                android:textStyle="normal|italic"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@android:drawable/picture_frame"
+        android:layout_marginTop="20dp">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:cropToPadding="false"
+                android:adjustViewBounds="true"
+                android:src="@drawable/normal_img_default"/>
+            <app.dinus.com.loadingdrawable.LoadingView
+                android:id="@+id/loading_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                app:loading_renderer="MaterialLoadingRenderer"
+                android:layout_gravity="center_vertical|center_horizontal"/>
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/list_item_shot_details_picture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:cropToPadding="false"
+                android:adjustViewBounds="true"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/list_item_shot_details_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                app:srcCompat="@drawable/ic_menu_share"
+                android:layout_marginRight="5dp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:id="@+id/list_item_shot_details_likes"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_like"
+                        android:id="@+id/list_item_shot_details_likes_icon"
+                        android:layout_marginRight="8dp"/>
+
+                    <TextView
+                        android:text="163"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/list_item_shot_details_likes_count"
+                        android:gravity="center_vertical"/>
+                </LinearLayout>
+
+                <TextView
+                    android:text="563"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/list_item_shot_details_view"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_read"
+                    android:layout_marginRight="10dp"
+                    android:drawablePadding="8dp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:id="@+id/list_item_shot_details_buckets">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_bucket"
+                        android:id="@+id/list_item_shot_details_buckets_icon"
+                        android:layout_marginRight="8dp"/>
+
+                    <TextView
+                        android:text="15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/list_item_shot_details_buckets_count"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:text="DKNG is coming to Flatstock at SXSW! Presented by the American Poster Institute, Flatstock 59 will display the works of the world's top gig poster artists. The show runs March 16-18 and will feature posters of varying styles and techniques for sale by the very artists who create them. At the DKNG booth, we’ll have lots of rare and previously sold out posters available. Visit us at Exhibit Hall 4 in the Austin Convention Center, Thursday - Saturday."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_item_shot_details_description"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:padding="5dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_item_shot_responses_count"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:layout_marginLeft="8dp"/>
+
+        <TextView
+            android:text="@string/responses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            />
+    </LinearLayout>
+</LinearLayout>

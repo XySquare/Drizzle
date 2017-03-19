@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <!--<item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Shots"/>-->
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_bucket_pressed"
+            android:title="Bucket"/>
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_like_pressed"
+            android:title="Like"/>
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_following"
+            android:title="Following"/>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share_normal"
+                android:title="Share"/>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send"/>
+        </menu>
+    </item>
+
+</menu>

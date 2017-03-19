@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              style="?android:attr/listSeparatorTextViewStyle"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginStart="10dp"
+              android:layout_marginEnd="10dp"
+              android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <cn.gavinliu.android.lib.shapedimageview.ShapedImageView
+            app:shape_mode="circle"
+            android:layout_height="80dp"
+            android:id="@+id/list_item_following_designer_avatar"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="80dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:text="Corey Reifinger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_item_following_designer_name"
+                android:layout_marginBottom="5dp"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                android:paddingLeft="5dp"/>
+
+            <TextView
+                android:text="Bath, UK"
+                android:id="@+id/list_item_following_designer_location"
+                android:layout_marginBottom="5dp"
+                android:textStyle="normal|italic"
+                android:textSize="18sp"
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:text="Following"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:textStyle="normal|bold"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/list_item_following_unfollow_button"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="2698"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/list_item_following_follower_count"
+                        android:layout_marginRight="10dp"
+                        android:textStyle="normal|bold"
+                        android:textSize="14sp"
+                        />
+
+                    <TextView
+                        android:text="followers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView15"
+                        android:textSize="14sp"
+                        android:textStyle="normal|italic"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:text="A unique brand  agency found by Jonathan Quintin. You can call me Jonno. behance.net/Jonath..."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_item_following_designer_introduce"
+                android:paddingLeft="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_following_shots_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp"/>
+
+
+</LinearLayout>

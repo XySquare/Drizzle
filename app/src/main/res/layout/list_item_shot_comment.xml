@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:paddingBottom="8dp"
+                android:paddingStart="8dp"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:paddingEnd="8dp">
+
+    <cn.gavinliu.android.lib.shapedimageview.ShapedImageView
+        android:id="@+id/list_item_shot_comment_user"
+        app:shape_mode="circle"
+        android:scaleType="centerCrop"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:text="Tim Praetzel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_item_shot_comment_username"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/list_item_shot_comment_user"
+        android:layout_toEndOf="@id/list_item_shot_comment_user"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"/>
+
+    <TextView
+        android:text="Congrats! You guys deserve to be up there with the best!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_item_shot_comment_contents"
+        android:textSize="18sp"
+        android:layout_below="@id/list_item_shot_comment_username"
+        android:layout_alignLeft="@id/list_item_shot_comment_username"
+        android:layout_alignStart="@id/list_item_shot_comment_username"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_item_shot_comment_contents"
+        android:layout_alignLeft="@+id/list_item_shot_comment_contents"
+        android:layout_alignStart="@+id/list_item_shot_comment_contents"
+        >
+
+        <TextView
+            android:text="about 12 hours ago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_item_shot_comment_time"
+            android:textStyle="normal|italic"
+            android:layout_gravity="left|center_vertical"
+            />
+
+        <LinearLayout
+            android:id="@+id/list_item_shot_comment_likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_gravity="right">
+
+            <ImageView
+                android:id="@+id/list_item_shot_comment_likes_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_like"
+                android:layout_marginRight="8dp"/>
+
+            <TextView
+                android:text="99"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_item_shot_comment_likes_count"
+                />
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:drawable/picture_frame"
+              android:paddingBottom="16dp"
+              android:paddingEnd="26dp"
+              android:paddingLeft="26dp"
+              android:paddingRight="26dp"
+              android:paddingStart="26dp">
+
+    <cn.gavinliu.android.lib.shapedimageview.ShapedImageView
+        android:id="@+id/list_item_designer_avatar"
+        app:shape_mode="circle"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Tim Praetzel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/list_item_designer_name"
+        android:layout_marginTop="10dp"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:text="Russia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_item_designer_location"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textStyle="normal|italic"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/list_item_designer_less">
+
+        <TextView
+            android:text="more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_item_designer_less_text"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_less_more"
+            android:id="@+id/list_item_designer_less_ico"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="    Hi! My name is Mike, I'm a creative geek from Prague. I enjoy creating eye candy solutio...."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_item_designer_introduce"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:layout_marginBottom="15dp"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif"
+        android:layout_weight="1"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_item_designer_follow"
+            android:layout_gravity="center"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            />
+    </FrameLayout>
+
+</LinearLayout>

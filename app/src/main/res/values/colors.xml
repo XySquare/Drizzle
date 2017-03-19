@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#1e1e1e</color>
+    <color name="colorAccent">@color/Pink</color>
+    <color name="Pink">#ea4c89</color>
+    <color name="Charcoal">#333333</color>
+    <color name="LinkBlue">#3a8bbb</color>
+    <color name="Pro">#66cccc</color>
+    <color name="JobsHiring">#7bbb5e</color>
+    <color name="Teams">#00b6e3</color>
+    <color name="Playbook">#66cc99</color>
+    <color name="Slate">#9da3a5</color>
+    <color name="SlateLight">#cecece</color>
+    <color name="White">#FFFFFF</color>
+</resources>

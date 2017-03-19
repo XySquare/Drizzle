@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Drizzle</string>
+    <string name="responses">responses</string>
+    <string name="oldest">oldest</string>
+    <string name="newest">newest</string>
+    <string name="liked">liked</string>
+    <string name="Instruction_title">授权说明</string>
+    <string name="Login_title">登录</string>
+    <string name="login_success_text">登陆成功</string>
+    <string name="instruction_title">我们需要您授予如下权限以提供更好的服务：</string>
+    <string name="instruction_0_text">授予我们对公共信息的只读访问权限。</string>
+    <string name="instruction_1_text">授予我们对用户资源的写访问权限，除了评论和照片。</string>
+    <string name="instruction_next_button">继续</string>
+    <string name="instruction_2_text">说明：</string>
+    <string name="instruction_3_text">如果您需要创建、更新或删除评论、照片或附件，您需要被会员邀请。</string>
+    <string name="instruction_link_text">详见：http://help.dribbble.com/#how-can-i-leave-comments-on-shots</string>
+    <string name="instruction_4_txt">本应用暂时不提供该功能。</string>
+    <string name="network_error">连接失败，请检查网络。</string>
+    <string name="user_refuse_auth">您拒绝了授权。</string>
+    <string name="unexpected_error">出现了意外错误，授权已终止。</string>
+    <string name="auth_fail">授权失败，请稍后再试。</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="buckets">Buckets</string>
+    <string name="shots">shots</string>
+    <string name="likes">Likes</string>
+    <string name="create_bucket">Create a new bucket</string>
+    <string name="create_bucket_name">Name</string>
+    <string name="max_bucket_name_number">64</string>
+    <string name="bucket_description">Description</string>
+    <string name="max_bucket_description_number">160</string>
+    <string name="add_into_bucket">Add this shot to a bucket</string>
+    <string name="create_bucket_button">Create Button</string>
+    <string name="create_bucket_cancel_button">Cancel</string>
+    <string name="edit_bucket_button">Update</string>
+    <string name="add_into_bucket_create_new">+ Create a new bucket</string>
+    <string name="designer_shots">Shots</string>
+    <string name="designer_projects">Projects</string>
+    <string name="designer_followers">Followers</string>
+
+    <string name="action_login">登录</string>
+    <string name="share_shot_subject">分享图片</string>
+    <string name="send_shot_url">发送消息</string>
+    <string name="shot_share_text">分享%1$s 的作品 %2$s : %3$s</string>
+
+    <string name="delete_confirm_text">您确定要删除么?</string>
+    <string name="delete_success">删除成功</string>
+    <string name="delete_fail">删除失败</string>
+    <string name="add_success">添加成功</string>
+    <string name="add_failed">添加失败</string>
+    <string name="create_success">创建成功</string>
+    <string name="create_failed">创建失败</string>
+    <string name="now_loading">正在加载...</string>
+    <string name="no_more">没有了。</string>
+    <string name="network_error_touch_to_retry">请检查网络，点击重试。</string>
+
+    <string name="not_login">未登录</string>
+</resources>

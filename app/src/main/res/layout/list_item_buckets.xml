@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              style="?android:attr/listSeparatorTextViewStyle"
+              android:paddingStart="0dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageButton
+            app:srcCompat="@android:drawable/ic_menu_edit"
+            android:layout_centerVertical="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/button_edit"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginRight="16dp"/>
+
+        <ImageButton
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            app:srcCompat="@android:drawable/ic_menu_delete"
+            android:layout_centerVertical="false"
+            android:layout_toLeftOf="@+id/button_edit"
+            android:layout_toStartOf="@+id/button_edit"
+            android:id="@+id/button_delete"/>
+
+        <TextView
+            android:text="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_item_buckets_shot_number"
+            android:textStyle="normal|bold"
+            android:layout_below="@+id/list_item_buckets_introduce"
+            android:layout_alignLeft="@+id/list_item_buckets_introduce"
+            android:layout_alignStart="@+id/list_item_buckets_introduce"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="9dp"/>
+
+        <TextView
+            android:text="shots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_item_buckets_introduce"
+            android:layout_toRightOf="@+id/list_item_buckets_shot_number"
+            android:layout_toEndOf="@+id/list_item_buckets_shot_number"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:text="Updated March 10, 2017"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_item_buckets_update_time"
+            android:textStyle="normal|italic"
+            android:textAllCaps="false"
+            android:layout_below="@+id/list_item_buckets_shot_number"
+            android:layout_alignLeft="@+id/list_item_buckets_shot_number"
+            android:layout_alignStart="@+id/list_item_buckets_shot_number"/>
+
+        <TextView
+            android:text="bucket name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_item_buckets_name"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/button_delete"
+            android:layout_toStartOf="@+id/button_delete"
+            android:textColor="@color/LinkBlue"/>
+
+        <TextView
+            android:text="bucket introduce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_item_buckets_introduce"
+            android:textStyle="normal|italic"
+            android:layout_below="@+id/list_item_buckets_name"
+            android:layout_toLeftOf="@+id/button_delete"
+            android:layout_toStartOf="@+id/button_delete"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:id="@+id/recycler_view_shots"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

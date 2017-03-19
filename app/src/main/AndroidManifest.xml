@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="org.drizzle.drizzle">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".ShotsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ShotDetailsActivity"
+            android:label="Details"/>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/Login_title">
+        </activity>
+        <activity
+            android:name=".InstructionActivity"
+            android:label="@string/Instruction_title">
+        </activity>
+        <activity
+            android:name=".MyBucketsActivity"
+            android:label="Buckets">
+        </activity>
+        <activity
+            android:name=".ShotsOfMyBucketActivity"
+            android:label="Buckets">
+        </activity>
+        <activity
+            android:name=".BucketEditActivity"
+            android:label="Edit Bucket">
+        </activity>
+        <activity android:name=".AddToBucketActivity"
+                  android:label="Add To Bucket">
+        </activity>
+        <activity android:name=".BucketCreateActivity"
+                  android:label="Create Bucket">
+        </activity>
+        <activity android:name=".LikedShotsActivity"
+                  android:label="Likes">
+         </activity>
+        <activity android:name=".UserInfoActivity"
+                  android:label="UserInfo">
+
+        </activity>
+        <activity android:name=".FollowingsActivity"
+                  android:label="Followings">
+
+        </activity>
+    </application>
+
+</manifest>

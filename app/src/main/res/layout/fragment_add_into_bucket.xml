@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="10dp"
+              android:weightSum="1">
+
+    <TextView
+        android:text="Add this shot to a bucket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:textAllCaps="false"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/fragment_add_into_bucket_recycler_view"
+        android:background="@android:color/transparent"/>
+
+    <FrameLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <app.dinus.com.loadingdrawable.LoadingView
+                    android:id="@+id/loading_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    app:loading_renderer="MaterialLoadingRenderer"
+                    android:layout_gravity="center_horizontal"/>
+
+                <Button
+                    android:text="Done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fragment_add_into_bucket_done_button"
+                    android:textAllCaps="false"
+                    android:textStyle="normal|bold"
+                    android:textSize="18sp"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_gravity="center_vertical"/>
+            </FrameLayout>
+
+            <Button
+                android:text="Cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fragment_edit_bucket_cancel"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/background_light"
+                android:layout_marginLeft="6dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:text="+ Create a new bucket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragment_add_into_bucket_create_bucket"
+            android:textColor="@drawable/selector_link"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="5dp"/>
+    </FrameLayout>
+
+</LinearLayout>
