@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Drizzle</string>
+    <string name="Login_title">Login</string>
+    <string name="Instruction_title">Authorization</string>
+    <string name="login_success_text">Login success</string>
+    <string name="instruction_title">We need you to grant the following permissions to provide a better service:</string>
+    <string name="instruction_0_text">Grant us read-only access to public data.</string>
+    <string name="instruction_1_text">Grant us write access to user resources, except comments and photos.</string>
+    <string name="instruction_next_button">Next</string>
+    <string name="instruction_2_text">Note:</string>
+    <string name="instruction_3_text">If you need to create, update or delete a comment, shot or attachment, you will need to be invited by a member.</string>
+    <string name="instruction_link_text">See: http://help.dribbble.com/#how-can-i-leave-comments-on-shots</string>
+    <string name="instruction_4_txt">This feature is not available in this app.</string>
+    <string name="network_error">Connection failed, please check your network.</string>
+    <string name="user_refuse_auth">You declined the authorization.</string>
+    <string name="unexpected_error">An unexpected error has occurred, the authorization has been terminated.</string>
+    <string name="auth_fail">"Authorization failed, please try again later. "</string>
+    <string name="action_login">Login</string>
+    <string name="share_shot_subject">Share shot</string>
+    <string name="send_shot_url">Send link</string>
+    <string name="shot_share_text">%2$s, work of %1$s: %3$s</string>
+    <string name="delete_confirm_text">Are you sure to delete it?</string>
+    <string name="delete_success">Delete successfully</string>
+    <string name="delete_fail">Delete failed</string>
+    <string name="add_success">Add success</string>
+    <string name="add_failed">Add failed</string>
+    <string name="create_success">Created successfully</string>
+    <string name="create_failed">Create failed</string>
+    <string name="now_loading">Loading...</string>
+    <string name="no_more">No more.</string>
+    <string name="network_error_touch_to_retry">Please check your network, tap to retry.</string>
+    <string name="not_login">Not logged in</string>
+</resources>
